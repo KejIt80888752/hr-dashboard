@@ -122,6 +122,14 @@ export default function Login() {
             <p style={{ fontSize: "11px", color: "#64748b", marginTop: "3px" }}>
               📞 +91 98765 43210
             </p>
+            {/* The Raise logo */}
+            <div style={{ marginTop: "20px" }}>
+              <img
+                src="/hr-dashboard/the-raise-logo.png"
+                alt="The Raise — Powered by KEJ IT"
+                style={{ width: "120px", opacity: 0.85, filter: "brightness(0) invert(1)" }}
+              />
+            </div>
           </div>
         </div>
 
