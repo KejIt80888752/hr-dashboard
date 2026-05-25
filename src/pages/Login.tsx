@@ -126,9 +126,19 @@ export default function Login() {
             <div style={{ marginTop: "20px" }}>
               <img
                 src="/hr-dashboard/the-raise-logo.png"
-                alt="The Raise — Powered by KEJ IT"
-                style={{ width: "120px", opacity: 0.85, filter: "brightness(0) invert(1)" }}
+                alt="The Raise"
+                style={{ width: "110px", opacity: 0.9, filter: "brightness(0) invert(1)" }}
               />
+              <p style={{
+                fontSize: "10px",
+                fontWeight: 700,
+                color: "#94a3b8",
+                letterSpacing: "1.5px",
+                textTransform: "uppercase",
+                marginTop: "5px",
+              }}>
+                Powered by KEJ IT
+              </p>
             </div>
           </div>
         </div>

@@ -171,9 +171,19 @@ export default function DashboardLayout() {
         <div style={{ marginTop: "14px", paddingTop: "12px", borderTop: "1px solid rgba(255,255,255,0.06)", textAlign: "center" }}>
           <img
             src="/hr-dashboard/the-raise-logo.png"
-            alt="The Raise — Powered by KEJ IT"
-            style={{ width: "100px", opacity: 0.75, filter: "brightness(0) invert(1)" }}
+            alt="The Raise"
+            style={{ width: "90px", opacity: 0.75, filter: "brightness(0) invert(1)" }}
           />
+          <p style={{
+            fontSize: "9px",
+            fontWeight: 700,
+            color: "#475569",
+            letterSpacing: "1.2px",
+            textTransform: "uppercase",
+            marginTop: "4px",
+          }}>
+            Powered by KEJ IT
+          </p>
         </div>
       </div>
     </div>
