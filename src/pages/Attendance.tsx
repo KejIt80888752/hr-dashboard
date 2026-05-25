@@ -33,7 +33,7 @@ export default function Attendance() {
       <div style={{ marginBottom: "24px" }}>
         <h1 style={{ fontSize: "22px", fontWeight: 700, color: "#0f172a" }}>Attendance</h1>
         <p style={{ color: "#64748b", fontSize: "14px", marginTop: "4px" }}>
-          {new Date().toLocaleDateString("en-IN", { weekday: "long", dateStyle: "long" })}
+          {new Date().toLocaleDateString("en-IN", { weekday: "long", year: "numeric", month: "long", day: "numeric" })}
         </p>
       </div>
 
