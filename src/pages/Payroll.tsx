@@ -19,7 +19,7 @@ export default function Payroll() {
           <h1 style={{ fontSize: "22px", fontWeight: 700, color: "#0f172a" }}>Payroll</h1>
           <p style={{ color: "#64748b", fontSize: "14px", marginTop: "4px" }}>May 2026 — Salary processing</p>
         </div>
-        <button style={{ display: "flex", alignItems: "center", gap: "8px", background: "linear-gradient(135deg,#2563eb,#1d4ed8)", border: "none", borderRadius: "10px", padding: "10px 18px", color: "#fff", fontSize: "14px", fontWeight: 600, cursor: "pointer" }}>
+        <button style={{ display: "flex", alignItems: "center", gap: "8px", background: "linear-gradient(135deg,#7c3aed,#6d28d9)", border: "none", borderRadius: "10px", padding: "10px 18px", color: "#fff", fontSize: "14px", fontWeight: 600, cursor: "pointer" }}>
           <Download style={{ width: 16, height: 16 }} /> Export Payslips
         </button>
       </div>
@@ -27,7 +27,7 @@ export default function Payroll() {
       {/* Summary */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "14px", marginBottom: "24px" }}>
         {[
-          { label: "Total Payroll", value: `₹${totalPayroll.toLocaleString("en-IN")}`, icon: IndianRupee, color: "#2563eb", bg: "#eff6ff" },
+          { label: "Total Payroll", value: `₹${totalPayroll.toLocaleString("en-IN")}`, icon: IndianRupee, color: "#7c3aed", bg: "#f5f3ff" },
           { label: "Employees Paid", value: PAYROLL.filter((e) => e.status === "paid").length.toString(), icon: CheckCircle, color: "#059669", bg: "#ecfdf5" },
           { label: "Avg. Salary", value: `₹${Math.round(totalPayroll / PAYROLL.length).toLocaleString("en-IN")}`, icon: TrendingUp, color: "#7c3aed", bg: "#f5f3ff" },
         ].map(({ label, value, icon: Icon, color, bg }) => (
@@ -76,8 +76,8 @@ export default function Payroll() {
                   <td style={{ padding: "13px 16px" }}>
                     <span style={{
                       display: "inline-flex", padding: "4px 10px", borderRadius: "20px", fontSize: "12px", fontWeight: 600,
-                      background: e.status === "paid" ? "#ecfdf5" : e.status === "processing" ? "#eff6ff" : "#fffbeb",
-                      color: e.status === "paid" ? "#059669" : e.status === "processing" ? "#2563eb" : "#d97706",
+                      background: e.status === "paid" ? "#ecfdf5" : e.status === "processing" ? "#f5f3ff" : "#fffbeb",
+                      color: e.status === "paid" ? "#059669" : e.status === "processing" ? "#7c3aed" : "#d97706",
                       textTransform: "capitalize",
                     }}>{e.status}</span>
                   </td>

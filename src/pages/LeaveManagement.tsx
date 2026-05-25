@@ -10,7 +10,7 @@ const LEAVE_REQUESTS = [
 ];
 
 const LEAVE_BALANCE = [
-  { type: "Annual Leave", total: 18, used: 5, color: "#2563eb" },
+  { type: "Annual Leave", total: 18, used: 5, color: "#7c3aed" },
   { type: "Sick Leave", total: 12, used: 2, color: "#059669" },
   { type: "Casual Leave", total: 6, used: 3, color: "#d97706" },
   { type: "Maternity / Paternity", total: 90, used: 0, color: "#7c3aed" },
@@ -34,7 +34,7 @@ export default function LeaveManagement() {
           <h1 style={{ fontSize: "22px", fontWeight: 700, color: "#0f172a" }}>Leave Management</h1>
           <p style={{ color: "#64748b", fontSize: "14px", marginTop: "4px" }}>Approve, reject and track employee leaves</p>
         </div>
-        <button style={{ display: "flex", alignItems: "center", gap: "8px", background: "linear-gradient(135deg,#2563eb,#1d4ed8)", border: "none", borderRadius: "10px", padding: "10px 18px", color: "#fff", fontSize: "14px", fontWeight: 600, cursor: "pointer", boxShadow: "0 4px 12px rgba(37,99,235,0.3)" }}>
+        <button style={{ display: "flex", alignItems: "center", gap: "8px", background: "linear-gradient(135deg,#7c3aed,#6d28d9)", border: "none", borderRadius: "10px", padding: "10px 18px", color: "#fff", fontSize: "14px", fontWeight: 600, cursor: "pointer", boxShadow: "0 4px 12px rgba(124,58,237,0.3)" }}>
           <Plus style={{ width: 16, height: 16 }} /> Apply Leave
         </button>
       </div>
@@ -63,7 +63,7 @@ export default function LeaveManagement() {
           {["all", "pending", "approved", "rejected"].map((f) => (
             <button key={f} onClick={() => setFilter(f)} style={{
               padding: "5px 12px", borderRadius: "8px", border: "none", fontSize: "12px", fontWeight: 500, cursor: "pointer",
-              background: filter === f ? "#2563eb" : "#f1f5f9", color: filter === f ? "#fff" : "#64748b", textTransform: "capitalize",
+              background: filter === f ? "#7c3aed" : "#f1f5f9", color: filter === f ? "#fff" : "#64748b", textTransform: "capitalize",
             }}>{f}</button>
           ))}
         </div>

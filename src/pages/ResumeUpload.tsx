@@ -93,7 +93,7 @@ export default function ResumeUpload() {
       {/* Stats */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px", marginBottom: "24px" }}>
         {[
-          { label: "Total Resumes", value: resumes.length, color: "#2563eb", bg: "#eff6ff" },
+          { label: "Total Resumes", value: resumes.length, color: "#7c3aed", bg: "#f5f3ff" },
           { label: "Shortlisted", value: resumes.filter((r) => r.status === "shortlisted").length, color: "#059669", bg: "#ecfdf5" },
           { label: "Under Review", value: resumes.filter((r) => r.status === "reviewing").length, color: "#d97706", bg: "#fffbeb" },
         ].map(({ label, value, color, bg }) => (
@@ -111,11 +111,11 @@ export default function ResumeUpload() {
         onDrop={handleDrop}
         onClick={() => fileInputRef.current?.click()}
         style={{
-          border: `2px dashed ${dragging ? "#2563eb" : "#e2e8f0"}`,
+          border: `2px dashed ${dragging ? "#7c3aed" : "#e2e8f0"}`,
           borderRadius: "16px",
           padding: "40px 24px",
           textAlign: "center",
-          background: dragging ? "#eff6ff" : "#fff",
+          background: dragging ? "#f5f3ff" : "#fff",
           cursor: "pointer",
           transition: "all 0.2s",
           marginBottom: "24px",
@@ -132,7 +132,7 @@ export default function ResumeUpload() {
 
         {uploading ? (
           <div>
-            <Loader2 style={{ width: 40, height: 40, color: "#2563eb", margin: "0 auto 12px", animation: "spin 1s linear infinite" }} />
+            <Loader2 style={{ width: 40, height: 40, color: "#7c3aed", margin: "0 auto 12px", animation: "spin 1s linear infinite" }} />
             <p style={{ fontSize: "15px", fontWeight: 600, color: "#1e293b" }}>Uploading resumes…</p>
           </div>
         ) : uploadSuccess ? (
@@ -146,7 +146,7 @@ export default function ResumeUpload() {
               style={{
                 width: "56px",
                 height: "56px",
-                background: "#eff6ff",
+                background: "#f5f3ff",
                 borderRadius: "14px",
                 display: "flex",
                 alignItems: "center",
@@ -154,7 +154,7 @@ export default function ResumeUpload() {
                 margin: "0 auto 16px",
               }}
             >
-              <Upload style={{ width: 26, height: 26, color: "#2563eb" }} />
+              <Upload style={{ width: 26, height: 26, color: "#7c3aed" }} />
             </div>
             <p style={{ fontSize: "16px", fontWeight: 600, color: "#1e293b", marginBottom: "6px" }}>
               Drop resumes here or click to upload
@@ -283,7 +283,7 @@ export default function ResumeUpload() {
                         </button>
                         <button
                           title="Download"
-                          style={{ background: "#eff6ff", border: "none", borderRadius: "7px", padding: "6px", cursor: "pointer", color: "#2563eb" }}
+                          style={{ background: "#f5f3ff", border: "none", borderRadius: "7px", padding: "6px", cursor: "pointer", color: "#7c3aed" }}
                         >
                           <Download style={{ width: 14, height: 14 }} />
                         </button>

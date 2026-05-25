@@ -36,7 +36,7 @@ const EMPLOYEES: Employee[] = [
 ];
 
 const DEPT_COLORS: Record<string, { bg: string; color: string }> = {
-  Engineering: { bg: "#eff6ff", color: "#2563eb" },
+  Engineering: { bg: "#f5f3ff", color: "#7c3aed" },
   HR: { bg: "#ecfdf5", color: "#059669" },
   Finance: { bg: "#fffbeb", color: "#d97706" },
   Sales: { bg: "#fdf4ff", color: "#9333ea" },
@@ -44,7 +44,7 @@ const DEPT_COLORS: Record<string, { bg: string; color: string }> = {
 };
 
 const AVATAR_COLORS = [
-  "#2563eb", "#7c3aed", "#059669", "#d97706", "#dc2626",
+  "#7c3aed", "#7c3aed", "#059669", "#d97706", "#dc2626",
   "#0891b2", "#be185d", "#16a34a",
 ];
 
@@ -78,7 +78,7 @@ export default function Employees() {
             display: "flex",
             alignItems: "center",
             gap: "8px",
-            background: "linear-gradient(135deg, #2563eb, #1d4ed8)",
+            background: "linear-gradient(135deg, #7c3aed, #6d28d9)",
             border: "none",
             borderRadius: "10px",
             padding: "10px 18px",
@@ -86,7 +86,7 @@ export default function Employees() {
             fontSize: "14px",
             fontWeight: 600,
             cursor: "pointer",
-            boxShadow: "0 4px 12px rgba(37,99,235,0.3)",
+            boxShadow: "0 4px 12px rgba(124,58,237,0.3)",
           }}
         >
           <Plus style={{ width: 16, height: 16 }} />
@@ -127,7 +127,7 @@ export default function Employees() {
                 fontSize: "12px",
                 fontWeight: 500,
                 cursor: "pointer",
-                background: deptFilter === d ? "#2563eb" : "#f1f5f9",
+                background: deptFilter === d ? "#7c3aed" : "#f1f5f9",
                 color: deptFilter === d ? "#fff" : "#64748b",
               }}
             >
@@ -268,11 +268,11 @@ export default function Employees() {
                   style={{
                     flex: 1,
                     padding: "7px",
-                    background: "#eff6ff",
-                    border: "1px solid #bfdbfe",
+                    background: "#f5f3ff",
+                    border: "1px solid #ddd6fe",
                     borderRadius: "8px",
                     fontSize: "12px",
-                    color: "#2563eb",
+                    color: "#7c3aed",
                     cursor: "pointer",
                     fontWeight: 500,
                   }}

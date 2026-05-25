@@ -31,8 +31,8 @@ const STAT_CARDS = [
     change: "+12",
     trend: "up",
     icon: Users,
-    color: "#2563eb",
-    bg: "#eff6ff",
+    color: "#7c3aed",
+    bg: "#f5f3ff",
   },
   {
     label: "Payments Received",
@@ -82,7 +82,7 @@ const paymentTrend = [
 ];
 
 const deptData = [
-  { name: "Engineering", value: 82, color: "#2563eb" },
+  { name: "Engineering", value: 82, color: "#7c3aed" },
   { name: "Sales", value: 54, color: "#7c3aed" },
   { name: "HR", value: 28, color: "#059669" },
   { name: "Finance", value: 36, color: "#d97706" },
@@ -183,7 +183,7 @@ export default function Overview() {
               <Tooltip
                 contentStyle={{ background: "#0f172a", border: "none", borderRadius: "10px", color: "#f1f5f9", fontSize: "13px" }}
               />
-              <Bar dataKey="hired" name="Hired" fill="#2563eb" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="hired" name="Hired" fill="#7c3aed" radius={[4, 4, 0, 0]} />
               <Bar dataKey="left" name="Left" fill="#fca5a5" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
@@ -243,10 +243,10 @@ export default function Overview() {
               <Line
                 type="monotone"
                 dataKey="amount"
-                stroke="#2563eb"
+                stroke="#7c3aed"
                 strokeWidth={2.5}
-                dot={{ r: 4, fill: "#2563eb", strokeWidth: 0 }}
-                activeDot={{ r: 6, fill: "#2563eb" }}
+                dot={{ r: 4, fill: "#7c3aed", strokeWidth: 0 }}
+                activeDot={{ r: 6, fill: "#7c3aed" }}
               />
             </LineChart>
           </ResponsiveContainer>
@@ -261,12 +261,12 @@ export default function Overview() {
             </div>
             <button
               style={{
-                background: "#eff6ff",
+                background: "#f5f3ff",
                 border: "none",
                 borderRadius: "8px",
                 padding: "5px 10px",
                 fontSize: "12px",
-                color: "#2563eb",
+                color: "#7c3aed",
                 fontWeight: 500,
                 cursor: "pointer",
                 display: "flex",
@@ -286,7 +286,7 @@ export default function Overview() {
                     height: "32px",
                     borderRadius: "8px",
                     background:
-                      item.type === "payment" ? "#ecfdf5" : item.type === "resume" ? "#f5f3ff" : "#eff6ff",
+                      item.type === "payment" ? "#ecfdf5" : item.type === "resume" ? "#f5f3ff" : "#f5f3ff",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -298,7 +298,7 @@ export default function Overview() {
                   ) : item.type === "resume" ? (
                     <FileText style={{ width: 14, height: 14, color: "#7c3aed" }} />
                   ) : (
-                    <Users style={{ width: 14, height: 14, color: "#2563eb" }} />
+                    <Users style={{ width: 14, height: 14, color: "#7c3aed" }} />
                   )}
                 </div>
                 <div style={{ flex: 1, minWidth: 0 }}>

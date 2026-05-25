@@ -70,7 +70,7 @@ export default function DashboardLayout() {
     <div style={{ display: "flex", flexDirection: "column", height: "100%", overflowY: "auto" }}>
       {/* Logo */}
       <div style={{ padding: "20px 16px", borderBottom: "1px solid rgba(255,255,255,0.07)", display: "flex", alignItems: "center", gap: "11px", flexShrink: 0 }}>
-        <div style={{ width: "36px", height: "36px", background: "linear-gradient(135deg,#2563eb,#1d4ed8)", borderRadius: "9px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 4px 12px rgba(37,99,235,0.4)" }}>
+        <div style={{ width: "36px", height: "36px", background: "linear-gradient(135deg,#7c3aed,#6d28d9)", borderRadius: "9px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, boxShadow: "0 4px 12px rgba(124,58,237,0.4)" }}>
           <Building2 style={{ width: 18, height: 18, color: "#fff" }} />
         </div>
         <div>
@@ -101,9 +101,9 @@ export default function DashboardLayout() {
                   fontWeight: isActive ? 600 : 400,
                   fontSize: "13px",
                   color: isActive ? "#fff" : "#94a3b8",
-                  background: isActive ? "linear-gradient(135deg,#2563eb,#1d4ed8)" : "transparent",
+                  background: isActive ? "linear-gradient(135deg,#7c3aed,#6d28d9)" : "transparent",
                   transition: "all 0.15s",
-                  boxShadow: isActive ? "0 3px 10px rgba(37,99,235,0.3)" : "none",
+                  boxShadow: isActive ? "0 3px 10px rgba(124,58,237,0.3)" : "none",
                   marginBottom: "1px",
                 })}
                 onMouseEnter={(e) => {
@@ -138,7 +138,7 @@ export default function DashboardLayout() {
             display: "flex", alignItems: "center", gap: "10px", padding: "9px 10px", borderRadius: "9px",
             textDecoration: "none", fontSize: "13px", marginBottom: "10px",
             color: isActive ? "#fff" : "#94a3b8",
-            background: isActive ? "linear-gradient(135deg,#2563eb,#1d4ed8)" : "transparent",
+            background: isActive ? "linear-gradient(135deg,#7c3aed,#6d28d9)" : "transparent",
             fontWeight: isActive ? 600 : 400,
           })}
         >
@@ -147,7 +147,7 @@ export default function DashboardLayout() {
         </NavLink>
 
         <div style={{ display: "flex", alignItems: "center", gap: "9px", padding: "9px 10px", background: "rgba(255,255,255,0.04)", borderRadius: "9px", marginBottom: "8px" }}>
-          <div style={{ width: "30px", height: "30px", background: "linear-gradient(135deg,#2563eb,#7c3aed)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: "12px", fontWeight: 700, flexShrink: 0 }}>
+          <div style={{ width: "30px", height: "30px", background: "linear-gradient(135deg,#7c3aed,#7c3aed)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: "12px", fontWeight: 700, flexShrink: 0 }}>
             {user?.name?.charAt(0) ?? "A"}
           </div>
           <div style={{ overflow: "hidden", flex: 1 }}>
@@ -173,7 +173,7 @@ export default function DashboardLayout() {
   return (
     <div style={{ display: "flex", minHeight: "100vh", background: "#f1f5f9" }}>
       {/* Desktop Sidebar */}
-      <aside style={{ width: "220px", background: "#0f172a", flexShrink: 0, position: "fixed", top: 0, left: 0, height: "100vh", zIndex: 50 }} className="hidden-mobile">
+      <aside style={{ width: "220px", background: "#1a0e3c", flexShrink: 0, position: "fixed", top: 0, left: 0, height: "100vh", zIndex: 50 }} className="hidden-mobile">
         <SidebarContent />
       </aside>
 
@@ -181,7 +181,7 @@ export default function DashboardLayout() {
       {sidebarOpen && (
         <div style={{ position: "fixed", inset: 0, zIndex: 100, display: "flex" }}>
           <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.6)", backdropFilter: "blur(4px)" }} onClick={() => setSidebarOpen(false)} />
-          <aside style={{ width: "220px", background: "#0f172a", height: "100%", position: "relative", zIndex: 1 }}>
+          <aside style={{ width: "220px", background: "#1a0e3c", height: "100%", position: "relative", zIndex: 1 }}>
             <button onClick={() => setSidebarOpen(false)} style={{ position: "absolute", top: "14px", right: "14px", background: "rgba(255,255,255,0.08)", border: "none", borderRadius: "7px", padding: "5px", color: "#94a3b8", cursor: "pointer" }}>
               <X style={{ width: 15, height: 15 }} />
             </button>
@@ -205,9 +205,9 @@ export default function DashboardLayout() {
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <button style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: "9px", padding: "7px", cursor: "pointer", color: "#64748b", display: "flex", alignItems: "center", position: "relative" }}>
               <Bell style={{ width: 17, height: 17 }} />
-              <span style={{ position: "absolute", top: "6px", right: "6px", width: "7px", height: "7px", background: "#2563eb", borderRadius: "50%", border: "2px solid #fff" }} />
+              <span style={{ position: "absolute", top: "6px", right: "6px", width: "7px", height: "7px", background: "#7c3aed", borderRadius: "50%", border: "2px solid #fff" }} />
             </button>
-            <div style={{ width: "34px", height: "34px", background: "linear-gradient(135deg,#2563eb,#7c3aed)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: "12px", fontWeight: 700, cursor: "pointer" }}>
+            <div style={{ width: "34px", height: "34px", background: "linear-gradient(135deg,#7c3aed,#7c3aed)", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontSize: "12px", fontWeight: 700, cursor: "pointer" }}>
               {user?.name?.charAt(0) ?? "A"}
             </div>
           </div>

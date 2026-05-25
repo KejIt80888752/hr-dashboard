@@ -11,7 +11,7 @@ const PAYROLL_TREND = [
 ];
 
 const REPORT_TYPES = [
-  { title: "Employee Report", desc: "Full headcount, demographics & department summary", icon: Users, color: "#2563eb", bg: "#eff6ff" },
+  { title: "Employee Report", desc: "Full headcount, demographics & department summary", icon: Users, color: "#7c3aed", bg: "#f5f3ff" },
   { title: "Payroll Report", desc: "Monthly salary breakdown, deductions & net pay", icon: CreditCard, color: "#059669", bg: "#ecfdf5" },
   { title: "Attendance Report", desc: "Daily, weekly and monthly attendance analysis", icon: Calendar, color: "#d97706", bg: "#fffbeb" },
   { title: "Leave Report", desc: "Leave balances, usage patterns and trends", icon: FileText, color: "#7c3aed", bg: "#f5f3ff" },
@@ -25,7 +25,7 @@ export default function Reports() {
           <h1 style={{ fontSize: "22px", fontWeight: 700, color: "#0f172a" }}>Reports</h1>
           <p style={{ color: "#64748b", fontSize: "14px", marginTop: "4px" }}>Analytics and downloadable HR reports</p>
         </div>
-        <button style={{ display: "flex", alignItems: "center", gap: "8px", background: "linear-gradient(135deg,#2563eb,#1d4ed8)", border: "none", borderRadius: "10px", padding: "10px 18px", color: "#fff", fontSize: "14px", fontWeight: 600, cursor: "pointer" }}>
+        <button style={{ display: "flex", alignItems: "center", gap: "8px", background: "linear-gradient(135deg,#7c3aed,#6d28d9)", border: "none", borderRadius: "10px", padding: "10px 18px", color: "#fff", fontSize: "14px", fontWeight: 600, cursor: "pointer" }}>
           <Download style={{ width: 16, height: 16 }} /> Export All
         </button>
       </div>
@@ -52,7 +52,7 @@ export default function Reports() {
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px" }}>
         <div style={{ background: "#fff", borderRadius: "16px", border: "1px solid #e2e8f0", padding: "20px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "16px" }}>
-            <BarChart2 style={{ width: 16, height: 16, color: "#2563eb" }} />
+            <BarChart2 style={{ width: 16, height: 16, color: "#7c3aed" }} />
             <h3 style={{ fontSize: "15px", fontWeight: 600, color: "#0f172a" }}>Monthly Hiring (Last 6 months)</h3>
           </div>
           <ResponsiveContainer width="100%" height={200}>
@@ -61,7 +61,7 @@ export default function Reports() {
               <XAxis dataKey="month" tick={{ fontSize: 12, fill: "#94a3b8" }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fontSize: 12, fill: "#94a3b8" }} axisLine={false} tickLine={false} />
               <Tooltip contentStyle={{ background: "#0f172a", border: "none", borderRadius: "10px", color: "#f1f5f9", fontSize: "13px" }} />
-              <Bar dataKey="hired" name="Hired" fill="#2563eb" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="hired" name="Hired" fill="#7c3aed" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>

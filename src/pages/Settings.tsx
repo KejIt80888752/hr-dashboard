@@ -33,9 +33,9 @@ export default function Settings() {
           {TABS.map(({ id, label, icon: Icon }) => (
             <button key={id} onClick={() => setActiveTab(id)} style={{
               width: "100%", display: "flex", alignItems: "center", gap: "10px", padding: "10px 12px",
-              background: activeTab === id ? "#eff6ff" : "transparent",
+              background: activeTab === id ? "#f5f3ff" : "transparent",
               border: "none", borderRadius: "8px", cursor: "pointer", marginBottom: "4px",
-              color: activeTab === id ? "#2563eb" : "#64748b",
+              color: activeTab === id ? "#7c3aed" : "#64748b",
               fontSize: "13px", fontWeight: activeTab === id ? 600 : 400, textAlign: "left",
             }}>
               <Icon style={{ width: 16, height: 16 }} />
@@ -64,7 +64,7 @@ export default function Settings() {
                       width: "100%", background: "#f9fafb", border: "1.5px solid #e5e7eb", borderRadius: "8px",
                       padding: "9px 12px", fontSize: "13px", color: "#0f172a", outline: "none", boxSizing: "border-box",
                     }}
-                      onFocus={(e) => (e.target.style.borderColor = "#2563eb")}
+                      onFocus={(e) => (e.target.style.borderColor = "#7c3aed")}
                       onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")} />
                   </div>
                 ))}
@@ -75,7 +75,7 @@ export default function Settings() {
                   width: "100%", background: "#f9fafb", border: "1.5px solid #e5e7eb", borderRadius: "8px",
                   padding: "9px 12px", fontSize: "13px", color: "#0f172a", outline: "none", resize: "none", boxSizing: "border-box",
                 }}
-                  onFocus={(e) => (e.target.style.borderColor = "#2563eb")}
+                  onFocus={(e) => (e.target.style.borderColor = "#7c3aed")}
                   onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")} />
               </div>
               <div style={{ marginTop: "16px", display: "flex", alignItems: "center", gap: "8px" }}>
@@ -101,7 +101,7 @@ export default function Settings() {
                   </div>
                   <button onClick={() => setNotifs((n) => ({ ...n, [key]: !n[key] }))} style={{
                     width: "44px", height: "24px", borderRadius: "12px", border: "none", cursor: "pointer",
-                    background: notifs[key] ? "#2563eb" : "#e2e8f0", position: "relative", transition: "background 0.2s",
+                    background: notifs[key] ? "#7c3aed" : "#e2e8f0", position: "relative", transition: "background 0.2s",
                   }}>
                     <div style={{
                       width: "18px", height: "18px", borderRadius: "50%", background: "#fff",
@@ -128,7 +128,7 @@ export default function Settings() {
                     width: "100%", background: "#f9fafb", border: "1.5px solid #e5e7eb", borderRadius: "8px",
                     padding: "9px 12px", fontSize: "13px", color: "#0f172a", outline: "none", boxSizing: "border-box",
                   }}
-                    onFocus={(e) => (e.target.style.borderColor = "#2563eb")}
+                    onFocus={(e) => (e.target.style.borderColor = "#7c3aed")}
                     onBlur={(e) => (e.target.style.borderColor = "#e5e7eb")} />
                 </div>
               ))}
@@ -145,14 +145,14 @@ export default function Settings() {
               <h3 style={{ fontSize: "16px", fontWeight: 600, color: "#0f172a", marginBottom: "20px" }}>Appearance</h3>
               <p style={{ fontSize: "13px", color: "#64748b", marginBottom: "16px" }}>Choose your sidebar accent colour</p>
               <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-                {["#2563eb", "#7c3aed", "#059669", "#d97706", "#dc2626", "#0891b2", "#be185d"].map((c) => (
-                  <button key={c} style={{ width: "36px", height: "36px", borderRadius: "50%", background: c, border: c === "#2563eb" ? "3px solid #0f172a" : "3px solid transparent", cursor: "pointer" }} />
+                {["#7c3aed", "#7c3aed", "#059669", "#d97706", "#dc2626", "#0891b2", "#be185d"].map((c) => (
+                  <button key={c} style={{ width: "36px", height: "36px", borderRadius: "50%", background: c, border: c === "#7c3aed" ? "3px solid #0f172a" : "3px solid transparent", cursor: "pointer" }} />
                 ))}
               </div>
               <p style={{ fontSize: "13px", color: "#64748b", marginTop: "24px", marginBottom: "12px" }}>Dashboard layout</p>
               <div style={{ display: "flex", gap: "12px" }}>
                 {["Compact", "Comfortable", "Spacious"].map((l) => (
-                  <button key={l} style={{ padding: "8px 16px", borderRadius: "8px", border: "1.5px solid", borderColor: l === "Comfortable" ? "#2563eb" : "#e2e8f0", background: l === "Comfortable" ? "#eff6ff" : "#fff", fontSize: "13px", color: l === "Comfortable" ? "#2563eb" : "#64748b", cursor: "pointer", fontWeight: l === "Comfortable" ? 600 : 400 }}>
+                  <button key={l} style={{ padding: "8px 16px", borderRadius: "8px", border: "1.5px solid", borderColor: l === "Comfortable" ? "#7c3aed" : "#e2e8f0", background: l === "Comfortable" ? "#f5f3ff" : "#fff", fontSize: "13px", color: l === "Comfortable" ? "#7c3aed" : "#64748b", cursor: "pointer", fontWeight: l === "Comfortable" ? 600 : 400 }}>
                     {l}
                   </button>
                 ))}
@@ -164,7 +164,7 @@ export default function Settings() {
           <div style={{ marginTop: "28px", display: "flex", justifyContent: "flex-end" }}>
             <button onClick={handleSave} style={{
               display: "flex", alignItems: "center", gap: "8px",
-              background: saved ? "#059669" : "linear-gradient(135deg,#2563eb,#1d4ed8)",
+              background: saved ? "#059669" : "linear-gradient(135deg,#7c3aed,#6d28d9)",
               border: "none", borderRadius: "10px", padding: "10px 22px",
               color: "#fff", fontSize: "14px", fontWeight: 600, cursor: "pointer",
               transition: "background 0.3s",

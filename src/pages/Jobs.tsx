@@ -11,7 +11,7 @@ const JOBS = [
 ];
 
 const DEPT_COLOR: Record<string, { bg: string; color: string }> = {
-  Engineering: { bg: "#eff6ff", color: "#2563eb" },
+  Engineering: { bg: "#f5f3ff", color: "#7c3aed" },
   HR: { bg: "#ecfdf5", color: "#059669" },
   Sales: { bg: "#fdf4ff", color: "#9333ea" },
   Finance: { bg: "#fffbeb", color: "#d97706" },
@@ -36,7 +36,7 @@ export default function Jobs() {
             {JOBS.filter((j) => j.status === "active").length} active openings · {JOBS.reduce((s, j) => s + j.applicants, 0)} total applicants
           </p>
         </div>
-        <button style={{ display: "flex", alignItems: "center", gap: "8px", background: "linear-gradient(135deg,#2563eb,#1d4ed8)", border: "none", borderRadius: "10px", padding: "10px 18px", color: "#fff", fontSize: "14px", fontWeight: 600, cursor: "pointer", boxShadow: "0 4px 12px rgba(37,99,235,0.3)" }}>
+        <button style={{ display: "flex", alignItems: "center", gap: "8px", background: "linear-gradient(135deg,#7c3aed,#6d28d9)", border: "none", borderRadius: "10px", padding: "10px 18px", color: "#fff", fontSize: "14px", fontWeight: 600, cursor: "pointer", boxShadow: "0 4px 12px rgba(124,58,237,0.3)" }}>
           <Plus style={{ width: 16, height: 16 }} /> Post Job
         </button>
       </div>
@@ -51,7 +51,7 @@ export default function Jobs() {
         {["all", "active", "closed"].map((f) => (
           <button key={f} onClick={() => setFilter(f)} style={{
             padding: "8px 14px", borderRadius: "8px", border: "none", fontSize: "13px", fontWeight: 500, cursor: "pointer",
-            background: filter === f ? "#2563eb" : "#fff", color: filter === f ? "#fff" : "#64748b",
+            background: filter === f ? "#7c3aed" : "#fff", color: filter === f ? "#fff" : "#64748b",
             outline: filter === f ? "none" : "1px solid #e2e8f0", textTransform: "capitalize",
           } as React.CSSProperties}>{f}</button>
         ))}
@@ -97,7 +97,7 @@ export default function Jobs() {
                 <button style={{ flex: 1, padding: "8px", background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: "8px", fontSize: "12px", color: "#64748b", cursor: "pointer", fontWeight: 500 }}>
                   View Applicants
                 </button>
-                <button style={{ flex: 1, padding: "8px", background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: "8px", fontSize: "12px", color: "#2563eb", cursor: "pointer", fontWeight: 500 }}>
+                <button style={{ flex: 1, padding: "8px", background: "#f5f3ff", border: "1px solid #ddd6fe", borderRadius: "8px", fontSize: "12px", color: "#7c3aed", cursor: "pointer", fontWeight: 500 }}>
                   Edit Job
                 </button>
               </div>

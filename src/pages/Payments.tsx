@@ -69,7 +69,7 @@ export default function Payments() {
             display: "flex",
             alignItems: "center",
             gap: "8px",
-            background: "linear-gradient(135deg, #2563eb, #1d4ed8)",
+            background: "linear-gradient(135deg, #7c3aed, #6d28d9)",
             border: "none",
             borderRadius: "10px",
             padding: "10px 18px",
@@ -77,7 +77,7 @@ export default function Payments() {
             fontSize: "14px",
             fontWeight: 600,
             cursor: initiating ? "not-allowed" : "pointer",
-            boxShadow: "0 4px 12px rgba(37,99,235,0.3)",
+            boxShadow: "0 4px 12px rgba(124,58,237,0.3)",
           }}
         >
           {initiating ? (
@@ -118,8 +118,8 @@ export default function Payments() {
       {/* Razorpay info banner */}
       <div
         style={{
-          background: "#eff6ff",
-          border: "1px solid #bfdbfe",
+          background: "#f5f3ff",
+          border: "1px solid #ddd6fe",
           borderRadius: "12px",
           padding: "14px 18px",
           marginBottom: "20px",
@@ -132,7 +132,7 @@ export default function Payments() {
           style={{
             width: "36px",
             height: "36px",
-            background: "#2563eb",
+            background: "#7c3aed",
             borderRadius: "8px",
             display: "flex",
             alignItems: "center",
@@ -143,8 +143,8 @@ export default function Payments() {
           <IndianRupee style={{ width: 18, height: 18, color: "#fff" }} />
         </div>
         <div style={{ flex: 1 }}>
-          <p style={{ fontSize: "13px", fontWeight: 600, color: "#1e40af" }}>Razorpay Integration Ready</p>
-          <p style={{ fontSize: "12px", color: "#3b82f6", marginTop: "2px" }}>
+          <p style={{ fontSize: "13px", fontWeight: 600, color: "#5b21b6" }}>Razorpay Integration Ready</p>
+          <p style={{ fontSize: "12px", color: "#8b5cf6", marginTop: "2px" }}>
             Add your Razorpay Key ID &amp; Key Secret in the environment variables to go live.
           </p>
         </div>
@@ -157,7 +157,7 @@ export default function Payments() {
             alignItems: "center",
             gap: "4px",
             fontSize: "12px",
-            color: "#2563eb",
+            color: "#7c3aed",
             fontWeight: 600,
             textDecoration: "none",
             flexShrink: 0,
@@ -203,7 +203,7 @@ export default function Payments() {
                   fontSize: "12px",
                   fontWeight: 500,
                   cursor: "pointer",
-                  background: filter === f ? "#2563eb" : "#f1f5f9",
+                  background: filter === f ? "#7c3aed" : "#f1f5f9",
                   color: filter === f ? "#fff" : "#64748b",
                   textTransform: "capitalize",
                 }}
@@ -300,7 +300,7 @@ export default function Payments() {
                         style={{
                           background: "none",
                           border: "none",
-                          color: "#2563eb",
+                          color: "#7c3aed",
                           fontSize: "12px",
                           fontWeight: 600,
                           cursor: "pointer",

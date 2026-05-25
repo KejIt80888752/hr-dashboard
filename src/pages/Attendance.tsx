@@ -61,14 +61,14 @@ export default function Attendance() {
       {/* Weekly trend */}
       <div style={{ background: "#fff", borderRadius: "16px", border: "1px solid #e2e8f0", padding: "20px", marginBottom: "20px" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "16px" }}>
-          <TrendingUp style={{ width: 16, height: 16, color: "#2563eb" }} />
+          <TrendingUp style={{ width: 16, height: 16, color: "#7c3aed" }} />
           <h3 style={{ fontSize: "15px", fontWeight: 600, color: "#0f172a" }}>Weekly Attendance Rate (%)</h3>
         </div>
         <div style={{ display: "flex", alignItems: "flex-end", gap: "12px", height: "80px" }}>
           {WEEKLY.map((val, i) => (
             <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: "6px" }}>
               <span style={{ fontSize: "11px", color: "#64748b", fontWeight: 500 }}>{val}%</span>
-              <div style={{ width: "100%", height: `${val * 0.6}px`, background: val >= 90 ? "#2563eb" : val >= 80 ? "#f97316" : "#dc2626", borderRadius: "4px 4px 0 0" }} />
+              <div style={{ width: "100%", height: `${val * 0.6}px`, background: val >= 90 ? "#7c3aed" : val >= 80 ? "#f97316" : "#dc2626", borderRadius: "4px 4px 0 0" }} />
               <span style={{ fontSize: "11px", color: "#94a3b8" }}>{DAYS[i]}</span>
             </div>
           ))}
@@ -83,10 +83,10 @@ export default function Attendance() {
               padding: "14px 18px",
               background: "none",
               border: "none",
-              borderBottom: activeTab === tab ? "2px solid #2563eb" : "2px solid transparent",
+              borderBottom: activeTab === tab ? "2px solid #7c3aed" : "2px solid transparent",
               fontSize: "13px",
               fontWeight: 600,
-              color: activeTab === tab ? "#2563eb" : "#64748b",
+              color: activeTab === tab ? "#7c3aed" : "#64748b",
               cursor: "pointer",
               textTransform: "capitalize",
             }}>
